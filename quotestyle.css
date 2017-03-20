@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body{
+  background: url(https://s-media-cache-ak0.pinimg.com/originals/08/fb/5e/08fb5e3d2374934e9296985d67bc8539.png);
+  background-size: cover;
+  background-repeat: none;
+}
+
+button{
+  outline: none;
+}
+
+
+h1{
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Lora', sans-serif;
+}
+
+#quote-display p{
+  color: #626567;
+  font-family: 'Lora', sans-serif;
+  font-size: 17px;
+}
+
+
+#quote-display{
+  margin-top: 40px;
+  margin-left: 21%;
+  width: 750px;
+  height: 200px;
+  border: 2px white solid;
+  background: white;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+
+
+#newquote{
+  margin-left: 41%;
+  margin-top: 30px;
+  background-color: white;
+  border: none;
+  font-family: 'Lora', sans-serif;
+  padding: 10px;
+  border: 2px solid white;
+  color: #CD5C5C;
+  border-radius: 4px;
+  margin-right: 20px;
+  width: 100px;
+}
+
+#newquote:hover{
+  background-color:#CD5C5C;
+  border: 2px solid #CD5C5C;
+  color: white;
+}
+
+
+#tweet{
+  background-color: white;
+  border: none;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 4px;
+  width: 50px;
+
+}
+
+
+.modify{
+  color: #CD5C5C;
+}
