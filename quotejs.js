@@ -15,6 +15,10 @@ btn.addEventListener("click", function(){
 
 function renderHTML(data){
   var x =  Math.floor((Math.random()*40) + 1);
-  var htmlString = "<p>" + data[0].author + "is the author" + "</p>";
-  display.insertAdjacentHTML('beforeend', htmlString); 
+  var htmlString = "<p>" + data[x].author + "is the author" + "</p>";
+  display.insertAdjacentHTML('beforeend', htmlString);
 }
+
+$("#newquote").click(function(){
+  $("p").hide();
+});
