@@ -14,11 +14,12 @@ btn.addEventListener("click", function(){
 
 
 function renderHTML(data){
-  var x =  Math.floor((Math.random()*40) + 1);
-  var htmlString = "<p>" + data[x].author + "is the author" + "</p>";
-  display.insertAdjacentHTML('beforeend', htmlString);
+  var x =  Math.floor((Math.random()*44) + 1);
+  var quote = "<p>" + data[x].quote + "</p>" + "<h3>" + "-" + data[x].author + "</h3>";
+  display.insertAdjacentHTML('beforeend', quote);
 }
 
 $("#newquote").click(function(){
   $("p").hide();
+  $("h3").hide();
 });
