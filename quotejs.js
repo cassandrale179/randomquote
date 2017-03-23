@@ -1,4 +1,3 @@
-
 var display = document.getElementById("quote-display");
 var btn = document.getElementById("newquote");
 
@@ -23,3 +22,9 @@ $("#newquote").click(function(){
   $("p").hide();
   $("h3").hide();
 });
+
+//Allow button to redirect to twitter page + customized data text 
+$('#tweet').on('click', function(event){
+	event.preventDefault(); 
+	window.open("https://twitter.com/intent/tweet?text=hello")
+}); 
