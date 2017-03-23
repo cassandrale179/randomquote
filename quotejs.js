@@ -19,16 +19,18 @@ var tweetquote;
 function renderHTML(data){
   var x =  Math.floor((Math.random()*44) + 1);
   var quote = "<p>" + data[x].quote + "</p>" + "<h3>" + "-" + data[x].author + "</h3>";
-	tweetquote = data[x].quote; 
+	tweetquote = data[x].quote + " (" + data[x].author + " )"; 
   display.insertAdjacentHTML('beforeend', quote);
 
 }
 
+//Hide the old quote upon click so new quote can be displayed 
 $("#newquote").click(function(){
   $("p").hide();
   $("h3").hide();
 });
 
+//Allow quote to be tweet upon clicking tweet button 
 $('#tweet').on('click', function(event){
 	event.preventDefault(); 
 	window.open("https://twitter.com/intent/tweet?text=" + tweetquote)
